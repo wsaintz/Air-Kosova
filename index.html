@@ -5,126 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Kosova Air</title>
     <style>
-        :root {
-            --brand-blue: #0b3c5d;
-            --brand-dark: #07253b;
-            --brand-gold: #f1c40f;
-            --text-light: #ffffff;
-            --bg-gray: #f8f9fa;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
-            background-color: var(--bg-gray);
+            background-color: #f4f7f6;
             color: #333;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        /* Header / Brand Bar */
-        header {
-            background-color: var(--brand-dark);
-            color: var(--text-light);
-            padding: 1.5rem 2rem;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-gold);
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: var(--text-light);
-        }
-
-        .logo span {
-            color: var(--brand-gold);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 800px;
-            margin: 3rem auto;
+        .card {
             background: #ffffff;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid var(--brand-blue);
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 6px solid #0b3c5d;
         }
 
         h1 {
-            color: var(--brand-blue);
+            color: #0b3c5d;
+            margin-top: 0;
             font-size: 2rem;
-            margin-bottom: 0.5rem;
         }
 
         .tagline {
-            color: var(--brand-gold);
+            color: #f1c40f;
             font-weight: 700;
             font-style: italic;
-            margin-bottom: 2rem;
             text-transform: uppercase;
+            margin-bottom: 25px;
             letter-spacing: 0.5px;
         }
 
         p {
-            margin-bottom: 1.2rem;
-            color: #444;
-            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
         }
 
-        .highlight-box {
-            background-color: #f0f4f8;
-            border-left: 4px solid var(--brand-gold);
-            padding: 1.2rem;
-            margin: 2rem 0;
+        .fleet-highlight {
+            background: #f0f4f8;
+            padding: 15px 20px;
+            border-left: 4px solid #f1c40f;
+            margin: 25px 0;
             border-radius: 0 6px 6px 0;
         }
 
-        .highlight-box h3 {
-            color: var(--brand-dark);
-            margin-bottom: 0.3rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #777;
-            font-size: 0.85rem;
+        .fleet-highlight h3 {
+            margin: 0 0 5px 0;
+            color: #07253b;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Kosova <span>Air</span></div>
-    </header>
-
-    <div class="container">
-        <h1>About Kosova Air</h1>
+    <div class="card">
+        <h1>Kosova Air</h1>
         <div class="tagline">Fly Kosova, Fly Premium</div>
 
-        <p>Welcome to <strong>Kosova Air</strong>, the national virtual flagship connecting Pristina to high-yield global destinations across Europe, Asia, and North America.</p>
+        <p>Welcome to <strong>Kosova Air</strong>, our virtual flagship airline connecting high-demand global routes with top-tier comfort and efficiency.</p>
 
-        <p>Founded with a focus on premium long-haul efficiency, Kosova Air operates top-tier wide-body aircraft to deliver safe, reliable, and high-capacity service across major international corridors.</p>
+        <p>Built for long-haul simulation and strategy, we specialize in high-yield intercontinental corridors linking major international hubs across the globe.</p>
 
-        <div class="highlight-box">
-            <h3>Flagship Fleet</h3>
-            <p>Our long-range flagship operations are anchored by the iconic <strong>Boeing 747-400 (Registration: Z6-BOE)</strong>, styled in our distinctive royal blue and gold speed-sweep livery.</p>
+        <div class="fleet-highlight">
+            <h3>Flagship Aircraft</h3>
+            <p>Powered by our signature royal blue and gold Boeing 747-400 (Registration: <strong>Z6-BOE</strong>), delivering peak passenger capacity and premium first-class service.</p>
         </div>
 
-        <p>Whether bridging key intercontinental hubs like New York (JFK), London Heathrow (LHR), and Tokyo Haneda (HND), Kosova Air maintains a standard of excellence on every route.</p>
+        <p>Thank you for flying with us.</p>
     </div>
-
-    <footer>
-        &copy; 2026 Kosova Air. All rights reserved.
-    </footer>
 
 </body>
 </html>
