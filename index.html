@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kosova Air - Fly Kosova, Fly Premium</title>
+    <title>About Us - Kosova Air</title>
     <style>
         :root {
             --brand-blue: #0b3c5d;
-            --brand-dark-blue: #07253b;
+            --brand-dark: #07253b;
             --brand-gold: #f1c40f;
-            --brand-yellow: #f39c12;
             --text-light: #ffffff;
-            --bg-gray: #f4f7f6;
+            --bg-gray: #f8f9fa;
         }
 
         * {
@@ -24,252 +23,107 @@
         body {
             background-color: var(--bg-gray);
             color: #333;
+            line-height: 1.6;
         }
 
-        /* Navigation Header */
+        /* Header / Brand Bar */
         header {
-            background-color: var(--brand-dark-blue);
+            background-color: var(--brand-dark);
             color: var(--text-light);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 1.5rem 2rem;
+            text-align: center;
             border-bottom: 4px solid var(--brand-gold);
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 800;
             letter-spacing: 1px;
             color: var(--text-light);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .logo span {
             color: var(--brand-gold);
         }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: var(--brand-gold);
-        }
-
-        /* Hero Banner */
-        .hero {
-            background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-dark-blue) 100%);
-            color: var(--text-light);
-            padding: 4rem 2rem 6rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--brand-gold);
-            font-style: italic;
-        }
-
-        /* EasyJet-Style Booking Box */
-        .booking-container {
-            max-width: 900px;
-            margin: -3rem auto 3rem;
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            position: relative;
-            z-index: 10;
-        }
-
-        .booking-form {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-            align-items: end;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .form-group label {
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--brand-blue);
-            text-transform: uppercase;
-        }
-
-        .form-group select, .form-group input {
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 6px;
-            font-size: 1rem;
-            outline: none;
-        }
-
-        .form-group select:focus, .form-group input:focus {
-            border-color: var(--brand-blue);
-        }
-
-        .btn-search {
-            background: linear-gradient(135deg, var(--brand-gold) 0%, var(--brand-yellow) 100%);
-            color: var(--brand-dark-blue);
-            font-weight: 800;
-            font-size: 1.1rem;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: transform 0.1s, background 0.2s;
-        }
-
-        .btn-search:hover {
-            transform: translateY(-2px);
-            background: var(--brand-gold);
-        }
-
-        /* Fleet Showcase Section */
-        .fleet-section {
-            max-width: 1000px;
-            margin: 0 auto 3rem;
-            padding: 0 1rem;
-        }
-
-        .fleet-section h2 {
-            text-align: center;
-            color: var(--brand-blue);
-            margin-bottom: 1.5rem;
-        }
-
-        .fleet-card {
-            background: white;
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: #ffffff;
+            padding: 2.5rem;
             border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            border-left: 6px solid var(--brand-gold);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--brand-blue);
         }
 
-        .fleet-info {
-            padding: 1.5rem;
-        }
-
-        .fleet-info h3 {
-            color: var(--brand-dark-blue);
+        h1 {
+            color: var(--brand-blue);
+            font-size: 2rem;
             margin-bottom: 0.5rem;
         }
 
-        .fleet-info p {
-            color: #666;
-            line-height: 1.5;
+        .tagline {
+            color: var(--brand-gold);
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid var(--brand-gold);
+            padding: 1.2rem;
+            margin: 2rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--brand-dark);
+            margin-bottom: 0.3rem;
         }
 
         /* Footer */
         footer {
-            background-color: var(--brand-dark-blue);
-            color: white;
             text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            border-top: 2px solid var(--brand-gold);
+            padding: 2rem;
+            color: #777;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <header>
-        <a href="#" class="logo">Kosova <span>Air</span></a>
-        <nav>
-            <ul>
-                <li><a href="#">Flight Status</a></li>
-                <li><a href="#">Destinations</a></li>
-                <li><a href="#">Fleet</a></li>
-                <li><a href="#">Manage Booking</a></li>
-            </ul>
-        </nav>
+        <div class="logo">Kosova <span>Air</span></div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
-        <h1>Welcome Aboard Kosova Air</h1>
-        <p>Fly Kosova, Fly Premium</p>
-    </section>
+    <div class="container">
+        <h1>About Kosova Air</h1>
+        <div class="tagline">Fly Kosova, Fly Premium</div>
 
-    <!-- EasyJet Style Search Widget -->
-    <div class="booking-container">
-        <form class="booking-form" onsubmit="event.preventDefault(); alert('Searching flights...');">
-            <div class="form-group">
-                <label for="from">From</label>
-                <select id="from">
-                    <option value="PRN">Pristina (PRN)</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="to">To</label>
-                <select id="to">
-                    <option value="JFK">New York (JFK)</option>
-                    <option value="LHR">London Heathrow (LHR)</option>
-                    <option value="HND">Tokyo Haneda (HND)</option>
-                    <option value="DXB">Dubai (DXB)</option>
-                </select>
-            </div>
+        <p>Welcome to <strong>Kosova Air</strong>, the national virtual flagship connecting Pristina to high-yield global destinations across Europe, Asia, and North America.</p>
 
-            <div class="form-group">
-                <label for="date">Depart</label>
-                <input type="date" id="date">
-            </div>
+        <p>Founded with a focus on premium long-haul efficiency, Kosova Air operates top-tier wide-body aircraft to deliver safe, reliable, and high-capacity service across major international corridors.</p>
 
-            <div class="form-group">
-                <label for="passengers">Passengers</label>
-                <select id="passengers">
-                    <option value="1">1 Passenger</option>
-                    <option value="2">2 Passengers</option>
-                    <option value="4">4 Passengers</option>
-                </select>
-            </div>
+        <div class="highlight-box">
+            <h3>Flagship Fleet</h3>
+            <p>Our long-range flagship operations are anchored by the iconic <strong>Boeing 747-400 (Registration: Z6-BOE)</strong>, styled in our distinctive royal blue and gold speed-sweep livery.</p>
+        </div>
 
-            <button type="submit" class="btn-search">Search Flights</button>
-        </form>
+        <p>Whether bridging key intercontinental hubs like New York (JFK), London Heathrow (LHR), and Tokyo Haneda (HND), Kosova Air maintains a standard of excellence on every route.</p>
     </div>
 
-    <!-- Featured Fleet -->
-    <section class="fleet-section">
-        <h2>Flagship Aircraft</h2>
-        <div class="fleet-card">
-            <div class="fleet-info">
-                <h3>Boeing 747-400 (Reg: Z6-BOE)</h3>
-                <p>Experience ultra-long-haul luxury aboard our flagship double-decker aircraft. Configured with maximum capacity, premium business seating, and high-yield intercontinental performance.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Kosova Air. Virtual Fleet Operations.</p>
+        &copy; 2026 Kosova Air. All rights reserved.
     </footer>
 
 </body>
